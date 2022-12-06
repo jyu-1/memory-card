@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/styles.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className="header">One Piece Memory Card</header>
+            <main></main>
+            <footer className="footer">
+                <span>
+                    Copyright © 2022{" "}
+                    <a
+                        href="https://github.com/jyu-1/memory-card"
+                        title="github link to this project"
+                    >
+                        jyu-1
+                    </a>
+                </span>
+            </footer>
+        </div>
+    );
 }
 
 export default App;
