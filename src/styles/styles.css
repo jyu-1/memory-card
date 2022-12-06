@@ -44,13 +44,15 @@ header {
 }
 
 .score > div {
-    margin: 25px;
+    margin: 30px 30px 15px 30px;
     width: 250px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid yellow;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #d8be9b;
 }
 
 /* ListCards */
@@ -72,6 +74,7 @@ header {
     border-radius: 10px;
     margin: 15px;
     background-image: url(../assets/card.jpg);
+    background-position: center;
     transition: all 0.2s ease;
 }
 

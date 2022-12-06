@@ -10,13 +10,8 @@ import {
     Brook,
     Jinbe,
 } from "../assets/characters";
-import { useState } from "react";
 
 const Cards = (props) => {
-    const [character, setCharacter] = useState(props.character);
-
-    console.log(character);
-
     const characterDisplay = (char) => {
         switch (char) {
             case "Luffy":
