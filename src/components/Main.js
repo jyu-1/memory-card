@@ -8,7 +8,7 @@ const Main = () => {
     return (
         <div className="main-container">
             <Score />
-            <ListCards chars={characters} />
+            <ListCards characters={characters} />
         </div>
     );
 };

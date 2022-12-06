@@ -41,8 +41,11 @@ const Cards = (props) => {
 
     return (
         <div className="cards">
-            <img src={characterDisplay(props.character)} alt="luffy" />
-            <div>{props.character}</div>
+            <img
+                src={characterDisplay(props.character.name)}
+                alt="character card"
+            />
+            <div>{props.character.name}</div>
         </div>
     );
 };

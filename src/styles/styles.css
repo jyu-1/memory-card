@@ -35,6 +35,9 @@ header {
 /* Main */
 .main-container {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Score */
@@ -44,7 +47,7 @@ header {
 }
 
 .score > div {
-    margin: 30px 30px 15px 30px;
+    margin: 25px;
     width: 250px;
     height: 50px;
     display: flex;
@@ -57,22 +60,15 @@ header {
 
 /* ListCards */
 .list-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.top-row,
-.bot-row {
-    display: flex;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 25px;
 }
 
 /* Cards */
 .cards {
     border: 3px solid black;
     border-radius: 10px;
-    margin: 15px;
     background-image: url(../assets/card.jpg);
     background-position: center;
     transition: all 0.2s ease;
@@ -80,6 +76,7 @@ header {
 
 .cards:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .cards > img {
@@ -91,7 +88,7 @@ header {
 .cards > div {
     border-top: 3px solid black;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     font-size: 2rem;
 }
 
