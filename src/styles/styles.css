@@ -33,8 +33,63 @@ header {
 }
 
 /* Main */
-main {
+.main-container {
     flex: 1;
+}
+
+/* Score */
+.score {
+    display: flex;
+    justify-content: center;
+}
+
+.score > div {
+    margin: 25px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid yellow;
+}
+
+/* ListCards */
+.list-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-row,
+.bot-row {
+    display: flex;
+}
+
+/* Cards */
+.cards {
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 15px;
+    background-image: url(../assets/card.jpg);
+    transition: all 0.2s ease;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+}
+
+.cards > img {
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.cards > div {
+    border-top: 3px solid black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2rem;
 }
 
 /* Footer */

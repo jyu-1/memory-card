@@ -1,24 +1,13 @@
-import "./styles/styles.css";
-import logo from "./assets/logo.png";
+import Main from "./components/Main";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
     return (
         <div className="App">
-            <header>
-                <img src={logo} alt="logo" height="200px"></img>
-            </header>
-            <main></main>
-            <footer>
-                <span>
-                    Copyright © 2022{" "}
-                    <a
-                        href="https://github.com/jyu-1/memory-card"
-                        title="github link to this project"
-                    >
-                        jyu-1
-                    </a>
-                </span>
-            </footer>
+            <Header />
+            <Main />
+            <Footer />
         </div>
     );
 }
