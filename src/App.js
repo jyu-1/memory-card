@@ -1,11 +1,14 @@
 import "./styles/styles.css";
+import logo from "./assets/logo.png";
 
 function App() {
     return (
         <div className="App">
-            <header className="header">One Piece Memory Card</header>
+            <header>
+                <img src={logo} alt="logo" height="200px"></img>
+            </header>
             <main></main>
-            <footer className="footer">
+            <footer>
                 <span>
                     Copyright © 2022{" "}
                     <a

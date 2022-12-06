@@ -10,6 +10,11 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .App {
@@ -20,10 +25,11 @@ body {
 
 /* Header */
 header {
-    flex: 0 0 100px;
+    flex: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(255, 0, 0, 0.3);
 }
 
 /* Main */
@@ -37,4 +43,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(255, 0, 0, 0.3);
+    color: white;
 }
