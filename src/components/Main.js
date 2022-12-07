@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 const Main = () => {
     const [characters, setCharacters] = useState(data);
+    const [pickedCharacters, setPickedCharacters] = useState([]);
     const [score, setScore] = useState(0);
     const [bestScore, setBestScore] = useState(0);
 
@@ -21,8 +22,20 @@ const Main = () => {
     }, []);
 
     const handleClick = (event, name) => {
-        console.log(name);
+        if (pickedCharacters.includes(name)) {
+            setScore(0);
+            setPickedCharacters([]);
+        } else {
+            setScore(score + 1);
+            setPickedCharacters([...pickedCharacters, name]);
+        }
+        shuffle([...characters]);
     };
+
+    useEffect(() => {
+        if (score > bestScore) setBestScore(score);
+        console.log("Set High");
+    }, [score, bestScore]);
 
     return (
         <div className="main-container">
