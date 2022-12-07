@@ -2,12 +2,16 @@ import Score from "./Score";
 import ListCards from "./ListCards";
 import data from "./data";
 import { useEffect, useState } from "react";
+import clicked from "../assets/clicked.mp3";
+import wrong from "../assets/wrong.mp3";
 
 const Main = () => {
     const [characters, setCharacters] = useState(data);
     const [pickedCharacters, setPickedCharacters] = useState([]);
     const [score, setScore] = useState(0);
     const [bestScore, setBestScore] = useState(0);
+    const rightAns = new Audio(clicked);
+    const wrongAns = new Audio(wrong);
 
     const shuffle = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
@@ -23,9 +27,11 @@ const Main = () => {
 
     const handleClick = (event, name) => {
         if (pickedCharacters.includes(name)) {
+            wrongAns.play();
             setScore(0);
             setPickedCharacters([]);
         } else {
+            rightAns.play();
             setScore(score + 1);
             setPickedCharacters([...pickedCharacters, name]);
         }
