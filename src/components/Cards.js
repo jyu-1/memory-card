@@ -40,7 +40,10 @@ const Cards = (props) => {
     };
 
     return (
-        <div className="cards">
+        <div
+            className="cards"
+            onClick={(event) => props.handleClick(event, props.character.name)}
+        >
             <img
                 src={characterDisplay(props.character.name)}
                 alt="character card"
