@@ -38,6 +38,49 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 3s;
+}
+
+/* Loading */
+.loading {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.loading > div {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.loading > div:after {
+    animation: dots 1s linear infinite;
+    content: "";
+}
+
+@keyframes dots {
+    0%,
+    20% {
+        content: ".";
+    }
+    40% {
+        content: "..";
+    }
+    60% {
+        content: "...";
+    }
+    90%,
+    100% {
+        content: "";
+    }
+}
+
+.loading > img {
+    border-radius: 25px;
 }
 
 /* Score */
