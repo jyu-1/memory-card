@@ -4,12 +4,14 @@ import data from "./data";
 import { useEffect, useState } from "react";
 import clicked from "../assets/clicked.mp3";
 import wrong from "../assets/wrong.mp3";
+import Result from "./Result";
 
 const Main = () => {
     const [characters, setCharacters] = useState(data);
     const [pickedCharacters, setPickedCharacters] = useState([]);
     const [score, setScore] = useState(0);
     const [bestScore, setBestScore] = useState(0);
+    const [result, setResult] = useState(false);
     const rightAns = new Audio(clicked);
     const wrongAns = new Audio(wrong);
 
@@ -28,8 +30,7 @@ const Main = () => {
     const handleClick = (event, name) => {
         if (pickedCharacters.includes(name)) {
             wrongAns.play();
-            setScore(0);
-            setPickedCharacters([]);
+            setResult(true);
         } else {
             rightAns.play();
             setScore(score + 1);
@@ -40,13 +41,23 @@ const Main = () => {
 
     useEffect(() => {
         if (score > bestScore) setBestScore(score);
-        console.log("Set High");
+        if (score >= 10) setResult(true);
     }, [score, bestScore]);
+
+    const resetGame = () => {
+        setScore(0);
+        setPickedCharacters([]);
+        setResult(false);
+    };
 
     return (
         <div className="main-container">
-            <Score score={score} bestScore={bestScore} />
-            <ListCards characters={characters} handleClick={handleClick} />
+            {!result ? <Score score={score} bestScore={bestScore} /> : null}
+            {!result ? (
+                <ListCards characters={characters} handleClick={handleClick} />
+            ) : (
+                <Result score={score} resetGame={resetGame} />
+            )}
         </div>
     );
 };
