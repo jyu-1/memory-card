@@ -8,9 +8,16 @@ function App() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const timer1 = setTimeout(() => setLoading(false), 2000);
+        function loadTimeOut() {
+            setTimeout(() => {
+                setLoading(false);
+            }, 2000);
+        }
+
+        window.addEventListener("load", loadTimeOut);
+
         return () => {
-            clearTimeout(timer1);
+            window.removeEventListener("load", loadTimeOut);
         };
     }, []);
 
