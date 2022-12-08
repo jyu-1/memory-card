@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.ba4a79ef.css",
+    "main.js": "/memory-card/static/js/main.8032b46e.js",
+    "static/media/background.jpg": "/memory-card/static/media/background.fc50740b3d469fdae429.jpg",
+    "static/media/logo.png": "/memory-card/static/media/logo.fc6460b9a37ce8c78ad7.png",
+    "static/media/card.jpg": "/memory-card/static/media/card.49598f606b17ba1c7e46.jpg",
+    "static/media/loading.gif": "/memory-card/static/media/loading.3c7a98e93cf46ff55046.gif",
+    "static/media/franky.jpg": "/memory-card/static/media/franky.5439f3fadc47993abab6.jpg",
+    "static/media/clicked.mp3": "/memory-card/static/media/clicked.6ebb649a641ec35fdc1e.mp3",
+    "static/media/wrong.mp3": "/memory-card/static/media/wrong.493cc9f458f4882b9951.mp3",
+    "static/media/robin.jpg": "/memory-card/static/media/robin.13c7c5c47836fe6ac33f.jpg",
+    "static/media/nami.jpg": "/memory-card/static/media/nami.406970a7e32422c87ea6.jpg",
+    "static/media/sanji.jpg": "/memory-card/static/media/sanji.342418d0d95acc9a3f37.jpg",
+    "static/media/luffy.jpg": "/memory-card/static/media/luffy.6ce976ec5b1cb53316af.jpg",
+    "static/media/chopper.jpg": "/memory-card/static/media/chopper.bb0fb4cd51da5b4979bb.jpg",
+    "static/media/zoro.jpg": "/memory-card/static/media/zoro.0e42120fd9a19a565771.jpg",
+    "static/media/usopp.jpg": "/memory-card/static/media/usopp.31289d06d18c15727d90.jpg",
+    "static/media/jinbe.jpg": "/memory-card/static/media/jinbe.7ab2bf8d0e9e8351432f.jpg",
+    "static/media/brook.jpg": "/memory-card/static/media/brook.9588774000b1141974fd.jpg",
+    "index.html": "/memory-card/index.html",
+    "main.ba4a79ef.css.map": "/memory-card/static/css/main.ba4a79ef.css.map",
+    "main.8032b46e.js.map": "/memory-card/static/js/main.8032b46e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba4a79ef.css",
+    "static/js/main.8032b46e.js"
+  ]
+}
