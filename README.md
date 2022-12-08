@@ -1,9 +1,10 @@
 # One Piece Memory Card Game
 
-This project was made using create react app.
-The rule of this game is to pick a card that has not been picked.
-Every successful selection gives you 1 point. Picking a card that has already been picked resets your point back to zero and the game resets.
-Max point is 10.
+This project was created using create-react-app.\
+The rule of this game is to pick a card that has not been picked.\
+Every successful selection gives you 1 point. Picking a card that has already been picked resets your point back to zero and the game ends.\
+Max point is 10.\
+Functional components and hooks are used instead of class components.
 
 ## Live Preview
 
